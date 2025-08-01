@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+  <div class="nav">
+     <span><img src="computer.png" class="logo"></span>   <h1 class="nav-header">PREVAILING COMPUTERS <br> Trianing Institute</h1>
+    </div><ul class="nav-bar">
+        <li class="nav-item"><a class="nav-link" href="prevaling.html">HOME</a></li>
+         <li class="nav-item"><a class="nav-link" href="coures.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="images.html">IMAGES</a></li>
+           <li class="nav-item"><a class="nav-link" style="color:green;" href="resgister.html">REGISTRATION</a></li>
+     </ul>
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+  <form onsubmit="return validateForm()" id="form" action="https://formsubmit.co/Prevailingcomputersltd@yahoo.com" method="POST">
+    <label for="name"> PARENT'S NAME:</label><br>
+    <input type="text" id="parentsname" name="parentName" placeholder="Parent's Name"><br>
+    <span id="parentsnameerror" class="errormessage"></span><br>
+    <label for="name"> WARD'S NAME:</label><br>
+    <input type="text" id="wardsname" name="wardName" placeholder="ward's Name"><br>
+    <span id="wardserror" class="errormessage"></span><br>
+    <label for="Program">MONTH PACKAGE:</label><br>
+    <input type="text" id="Duration" name="monthduration" placeholder="Month Duration"><br>
+    <span id="montherror" class="errormessage"></span><br>
+    <label for="course">COURSE</label><br>
+    <select multiple size="7" id="select" name="course">
+      <option>AI</option>
+      <option>AI(with web development)</option>
+      <option>Auto CAD</option>
+      <option>Access</option>
+      <option>ArchiCAD</option>
+      <option>Audio/sound Editing</option>
+      <option>Adobe Illustration</option>
+      <option>Adobe Photoshop</option>
+      <option>Basic networking </option>
+      <option>Browsing</option>
+      <option>Corel Draw</option>
+      <option>Computer Appreciation</option>
+      <option>Computer Maintenance/Repair</option>
+      <option>Corel Photo Paint</option>
+      <option>Cyber Securoty</option>
+      <option>Coding</option>
+      <option>Canva</option>
+      <option>Color Seperation</option>
+      <option>CBT JAMB</option>
+      <option>Data Science</option>
+      <option>E-mailing</option>
+      <option>Graphics</option>
+      <option>Internet</option>
+      <option>Instant Artist</option>
+      <option>Java</option>
+      <option>Javascript</option>
+      <option>Ms-word</option>
+      <option>Ms-Excel</option>
+      <option>Ms-PowerPoint</option>
+      <option>Operating systeem(Intro)</option>
+      <option>Page Maker </option>
+      <option>Publsher</option>
+      <option>Python</option>
+      <option>Python(with Web Development)</option>
+      <option>Programming(Qbasic)</option>
+      <option>Peachtree Accunting Package</option>
+      <option>Print Artist</option>
+      <option>PicsArt Colour</option>
+      <option>Quick Book Accounting</option>
+      <option>SPSS</option>
+      <option>Software</option>
+      <option>Typing Tutor</option>
+      <option>User Interface</option>
+      <option>Video Editing</option>
+      <option>Windows</option>
+      <option value="">Web Design</option>
+      <option value="">Web Development</option>
+    </select><br>
+    <span id="selecterror" class="errormessage"></span><br>
+    <button type="submit" class="btn" >SUBMIT</button>
+    <input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_subject" value="New Registration Submission">
+
+  </form>
+  <div class="collapse-container">
+    <div class="collapse-header" onclick="toggleCollapse()">TERMS AND CONDITONS</div>
+    <div class="collapse-content" id="collapseContent">
+      <h4>Before Start:</h4>
+      <li>Every Student must pay before starting any program or package</li>
+      <li> 1 Passport required</li>
+
+      <h4>During class:</h4>
+      <li>No playing of games during class periods.</li>
+      <li>Students are to provide data for all the online trainings.</li>
+    </div>
+  </div>
+
+  <script>
+    function toggleCollapse() {
+
+      const content = document.getElementById("collapseContent");
+      content.classList.toggle("open");
+    }
+    
+
+
+       function validateForm() {
+      let valid = true;
+
+      const parentName = document.getElementById("parentsname").value.trim();
+      const wardName = document.getElementById("wardsname").value.trim();
+      const duration = document.getElementById("Duration").value.trim();
+      const courseSelect = document.getElementById("select");
+      const selectedCourses = Array.from(courseSelect.selectedOptions);
+
+      // Clear previous errors
+      document.getElementById("parentsnameerror").textContent = "";
+      document.getElementById("wardserror").textContent = "";
+      document.getElementById("montherror").textContent = "";
+      document.getElementById("selecterror").textContent = "";
+
+      if (!parentName) {
+        document.getElementById("parentsnameerror").textContent = "Please enter parent's name.";
+        valid = false;
+      }
+      if (!wardName) {
+        document.getElementById("wardserror").textContent = "Please enter ward's name.";
+        valid = false;
+      }
+      if (!duration) {
+        document.getElementById("montherror").textContent = "Please enter month package.";
+        valid = false;
+      }
+      if (selectedCourses.length === 0) {
+        document.getElementById("selecterror").textContent = "Please select at least one course.";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Please ensure you align with the terms and conditions before submitting.");
+      }
+
+      return valid;
+    }
+
+  function toggleMenu() {
+    document.querySelector('.nav-bar').classList.toggle('active');
+  }
+
+
+  </script>
+
+</body>
+
+</html>

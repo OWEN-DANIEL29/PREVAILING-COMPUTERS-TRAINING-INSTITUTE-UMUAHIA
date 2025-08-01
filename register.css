@@ -1,0 +1,196 @@
+body{
+    background-color: blue;   
+    height: 100vh;
+}
+form{
+    width:35vw;
+    margin-top: 7vh;
+    /* background-image: url('IMAGE/multi.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    line-height: 30px;
+  margin-left: 30vw;
+  margin-bottom: 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+input{
+    border: 2px solid grey;
+    border-radius: 20px;
+    height: 30px;
+    width: 25vw;
+    outline: none;
+    background-color: transparent;
+}
+label{
+    font-size:20px;
+    font-weight: 600;
+}
+select{
+    height: 20vh;
+    outline: none;
+    width: 20vw;
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.btn{
+    background-color: blue;
+    border: 2px solid transparent;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-top:-40px;
+}
+.nav{
+    background-color: rgb(255, 255, 66);
+    height: 15vh;
+    padding: 4px 10vw;
+    margin: 0;
+    margin-top: -2vh;
+}
+.nav-bar{
+    display: flex;
+    margin-top: -8vh;
+    margin-left: 45vw;
+    gap: 10px;
+    font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-header{
+    margin-left: 0;
+    margin-top: -8px ;
+}
+.logo{
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+   margin-top: 5px;
+   margin-left: -5vw;
+}
+.collapse-container {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: -50vh;
+    }
+
+    .collapse-header {
+      background: #ddd;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: #f0f0f0;
+      padding: 0 10px;
+    }
+
+    .collapse-content.open {
+      max-height: 200px; /* adjust as needed */
+      padding: 10px;
+    }
+.errormessage{
+    color: red;
+}
+.menu-toggle {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+     width: 30vw;
+        margin-left: auto;
+        margin-top: -12vh;
+        margin-right: -8vw;
+    }
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+    }
+body{
+    margin: 0;
+    min-width: 100%;
+    height: 100%;
+}
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #ddd;
+        padding: 8px 0;
+    }
+    .nav{
+        min-width: 100vw;
+    }
+    .nav-header{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .logo{
+        height: 30px;
+        margin-top: 20px;
+    }
+   form{
+    width: 70vw;
+    margin-left: 10vw;
+    height: 100vh;
+   }
+   input{
+    width: 60vw;
+   }
+   select{
+    width: 60vw;
+   }
+   .collapse-header{
+    margin-top: 60vh;
+    width: 60vw;
+    margin-left: 20vw;
+    border: none;
+   }
+   .collapse-container{
+    border: none;
+   }
+}
+@media (max-width:320px) {
+    .nav-header{
+        margin-top: 20px;
+    }
+}
+@media (max-width:375px) {
+    .nav-header{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .nav-header{
+        margin-top: 20px;
+    }
+}

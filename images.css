@@ -1,0 +1,97 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: chartreuse;
+}
+.nav{
+    background-color: rgb(255, 255, 66);
+    height: 15vh;
+    padding: 4px 10vw;
+    margin: 0;
+    margin-top: -2vh;
+}
+.nav-bar{
+    display: flex;
+    margin-top: -8vh;
+    margin-left: 50vw;
+    gap: 10px;
+    position: absolute;
+    font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-header{
+    margin-left: 0;
+    margin-top: -2px ;
+}
+.logo{
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+   margin-top: 5px;
+  
+}
+.main{
+    display: flex;
+    margin-left: 2.5vw;
+    gap: 10px;
+}
+.pics1{
+    width: 30vw;
+    height: 40vh;
+     border-radius: 40px;
+    border: 3px solid black;
+}
+.pics2{
+     border: 3px solid black;
+    width: 30vw;
+     border-radius: 40px;
+    height: 40vh;
+}
+.pics3{
+    width: 30vw;
+    height: 40vh;
+     border-radius: 40px;
+     border: 3px solid black;
+}
+
+pic{
+    height: 40vh;
+}
+.space{
+    height: 10vh;
+}
+.pics4{
+    width: 30vw;
+    margin-top: -;
+    height: 50vh;
+    border: 3px solid black;
+     border-radius: 40px;
+}
+.pics5{
+    height: 50vh;
+    width: 30vw;
+     border-radius: 40px;
+    border: 3px solid black;
+}
+.second{
+    display: flex;
+    gap: 10px;
+    margin-left: 2.5vw;
+}
+.menu-toggle {
+    display: none;
+    float: right;
+}
+.pics6{
+    height: 50vh;
+    width: 30vw;
+    border: 3px solid black;
+    border-radius: 40px;
+}
+
