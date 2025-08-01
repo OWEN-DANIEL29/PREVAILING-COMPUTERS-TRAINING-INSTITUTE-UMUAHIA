@@ -95,3 +95,108 @@ pic{
     border-radius: 40px;
 }
 
+.menu-toggle {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+     width: 30vw;
+        margin-left: auto;
+        margin-top: -12vh;
+        margin-right: -8vw;
+    }
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        width: 100%;
+        padding: 10px;
+    }
+body{
+    margin: 0;
+    min-width: 100%;
+}
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #ddd;
+        padding: 8px 0;
+    }
+    .nav-header{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .logo{
+     height: 40px;
+       margin-top: 20px;
+    }
+    .card{
+        display: inline;
+    }
+    .card1{
+       min-width: 90%;
+        margin-left: 5%;
+    }
+    .card2{
+       min-width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    .card3{
+        min-width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    table{
+       font-size: 15px;
+    }
+    .executive{
+        font-size: 30px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .main{
+        display: block;
+    }
+    .second{
+        display: block;
+    }
+    .pics1{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .pics2{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .pics3{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .pics4{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .pics5{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .pics6{
+        height: auto;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
